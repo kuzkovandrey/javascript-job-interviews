@@ -1,1 +1,8 @@
-# palindrome-js
+## palindrome-js
+
+Дана строка. Нужно написать функцию, которая позволяет вернуть значение true, если строка является палиндромом, false - если нет. При этом нужно учитывать пробелы и знаки препинания.
+
+```javascript
+palindrome('racecar') === true
+palindrome('table') === false
+```
