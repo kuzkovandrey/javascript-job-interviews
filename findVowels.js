@@ -1,14 +1,6 @@
-let findVowels = (string = '') => {
-	let reference = ["a", "e", "i", "o", "u"];
-
-	let vowels = string.split('').filter(item => {
-		for(let ref of reference) {
-			if (ref === item) return true;
-		}
-	})
-
-	console.log(vowels.length)
+let findVowels = (string, reference = ["a", "e", "i", "o", "u"]) => {
+	return string.split('').filter(item => reference.includes(item)).length
 }
 
-//findVowels('hello')
-//findVowels('why')
+console.log(findVowels('hello'))
+console.log(findVowels('why'))
